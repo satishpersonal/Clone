@@ -15,13 +15,13 @@ export default class RecordUiAPI extends LightningElement {
         // ADD YOUR CUSTOM OBJECT LOGIC IN ELSE-IF SINCE THE OBJECT API NAME IS COMING AS HARD-CODED IN JSON
         //IF ANYONE, FOUND A SOULTION. PLEASE FEEL FREE TO CREATE A PULLREQUEST
       if (this.sObjectName === "Case") {
-        let key = Object.keys(data.layouts.Case); // DE-STRUCTURIE UNIQUE KEY IN THE JSON LAYOUT
+        let key = Object.keys(data.layouts.Case); // DE-STRUCTURIE UNIQUE KEY IN THE JSON BODY
         let layoutSections = data.layouts.Case[key[0]].Full.View.sections; //ARRAY OF SECTIONS INFORMATION
         this.getLayoutData(layoutSections); // MAKE IT A SEPERATE RE-USABLE FUNCTION FOR CODE-REDUCTION IN FUTURE
         this.pageLoaded = true;
       }
       else if(this.sObjectName === "Account"){
-        let key = Object.keys(data.layouts.Account); // DE-STRUCTURIE UNIQUE KEY IN THE JSON LAYOUT
+        let key = Object.keys(data.layouts.Account); // DE-STRUCTURIE UNIQUE KEY IN THE JSON BODY
         let layoutSections = data.layouts.Account[key[0]].Full.View.sections; //ARRAY OF SECTIONS INFORMATION
         this.getLayoutData(layoutSections); // MAKE IT A SEPERATE RE-USABLE FUNCTION FOR CODE-REDUCTION IN FUTURE
         this.pageLoaded = true;
