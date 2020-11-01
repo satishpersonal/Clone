@@ -1,2 +1,2 @@
 # Clone
-Clones the Layout and Creates the Dynamic Form With Pre-Populated Field Values.
+Clones the Layout and Creates the Dynamic Layout With Current-Record Pre-Populated Field Values.
